@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "geometry-lib-pca"
+version = "0.1.0"
+description = "A library for geometric computations (for didactic purposes only)."
+authors = ["Gabriel Machado <gabriel.rmachado10@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "geometry_lib"}]
+exclude = ["tests", "**/tests", "**/__pycache__", "**/pytest.cache", "**/*.pyc"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
